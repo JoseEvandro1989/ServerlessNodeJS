@@ -1,0 +1,36 @@
+{
+<<<<<<< HEAD
+  "name": "image-analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.654.0",
+    "axios": "^0.19.2"
+  }
+=======
+  "name": "trigger-dynamo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+    "aws-sdk": "^2.648.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "invoke-local": "sls invoke local -f hero-insert --path requests-mock/hero.insert.json",
+    "invoke": "sls invoke  -f hero-insert --path requests-mock/hero.insert.json",
+    "invoke-trigger": "sls invoke local -f hero-trigger --path requests-mock/hero.trigger.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+>>>>>>> 8df6139... Joy validation and DynamoDB stream events
+}
